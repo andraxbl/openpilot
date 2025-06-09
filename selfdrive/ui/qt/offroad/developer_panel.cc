@@ -80,7 +80,7 @@ void DeveloperPanel::updateToggles(bool _offroad) {
      */
     experimentalLongitudinalToggle->setVisible(CP.getAlphaLongitudinalAvailable() && !is_release);
 
-    longManeuverToggle->setEnabled(hasLongitudinalControl(CP) && _offroad);
+    longManeuverToggle->setEnabled(true)(hasLongitudinalControl(CP) && _offroad);
   } else {
     longManeuverToggle->setEnabled(true);
     experimentalLongitudinalToggle->setVisible(true);
